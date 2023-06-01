@@ -167,6 +167,8 @@ body{
     padding: 12px 28px;
     cursor: pointer;
     letter-spacing: 4px;
+    text-decoration: none;
+
 
 }
 /* positioning the pictures*/
@@ -380,6 +382,34 @@ font-weight: 670;
     color: black;
    
   }
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+footer .column{
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 20px;
+}
+footer h4{
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 15px;
+   margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
 
 @media (max-width:799px) {
     #navbar {
@@ -571,11 +601,13 @@ font-weight: 670;
 
 #blog{
     padding: 150px 150px 0 150px;
+    margin-top: -12%;
 }
 #blog .BlogBox{
     display: flex;
     align-items: center;
     width: 100%;
+    padding-bottom: 90px;
 }
 
 #blog .blog-image{
@@ -602,4 +634,259 @@ font-weight: 670;
 }
 #blog .blog-details a:hover{
     color: #000000;
+}
+
+/* ABout SECTION */
+
+#header1.About-header h2{
+    color: #000000;
+}
+#header1.About-header p{
+    color: #000000;
+  font-size: 18px;}
+
+#aboutheader img {
+    width: 25%;
+    height: 2%;
+    padding-left: 3%;
+    animation: aboutheaderimg 4s linear infinite;
+}
+
+@keyframes aboutheaderimg  {
+    0%, 100%{
+        transform: scale(.9);
+        border-radius: var(--border-radius-hover);
+    }
+    50%{
+        transform: scale(.8);
+        border-radius: var(--border-radius);
+    }
+}
+
+
+#aboutheader h2{
+    color:burlywood;
+}
+#aboutheader p{
+    color: #000000;
+    font-size: 20px;
+    line-height: 130%;
+}
+#aboutheader {
+    display: flex;
+    align-items: center;
+
+}
+#aboutheader div{
+    padding-left: 40px;
+}
+
+
+
+
+
+/* Contact SECTION */
+#contact-details h2{
+    color:rgb(0, 0, 0);
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+#contact-details p{
+    color:rgb(2, 2, 2);
+}
+
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding-left: 3%;
+   
+}
+
+#contact-details span{
+    font-size: 19px;
+}
+#contact-details h3{
+    padding-bottom: 20px;
+    font-size: 20px;
+    
+}
+#contact-details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+    
+}
+#contact-details i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+#contact-details p{
+    margin: 0%;
+    font-size: 17px;
+}
+#contact-details .map{
+    width: 50%;
+    height: 400px;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* stling the message area*/
+#form-details {
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid rgb(183, 183, 183);
+}
+#form-details h2{
+    color: #000000;
+}
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-details form span{
+    font-size: 18px;
+}
+#form-details form  h2{
+    color:burlywood;
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+#form-details form input,
+#form-details form textarea{
+   width: 100%;
+   padding: 12px 15px;
+   outline: none;
+   margin-bottom: 20px;
+   border: 1px solid rgb(183, 183, 183);
+}
+#form-details form button{
+    background-color: burlywood;
+
+}
+#form-details form button:hover{
+    background-color: rgb(3, 3, 3);
+    color: white;
+
+}
+
+
+
+/* Shopping Cart section*/
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart table img{
+    width: 60px;
+}
+/* giving custom  width in the table*/
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+/* designing the input */
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+/* designing the table head*/
+#cart table thead{
+    border: 1px solid rgb(183, 183, 183);
+    border-left: none;
+    border-right: none;
+}
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+/* giving space in the top row*/
+#cart table tbody tr td{
+     padding-top: 15px;
+}
+
+#cart table tbody td{
+    font-size: 17px;
+}
+
+
+/* Styling the coupon and total price section*/
+#shopping-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#coupon{
+    width: 50%;
+    margin-bottom: 30px;
+    padding-left: 2%;
+    padding-top: 5%;
+}
+#coupon h3{
+  padding-bottom: 15px;
+}
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid rgb(183, 183, 183);
+}
+#coupon button{
+    background-color: burlywood;
+    padding: 12px 20px;
+}
+
+#Subtotal{
+    width: 35%;
+    margin-bottom: 30px;
+    border: 1px solid  rgb(183, 183, 183);
+    padding: 30px;
+    
+}
+#Subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#Subtotal table td{
+    width: 50%;
+    border: 1px solid rgb(183, 183, 183);
+    padding: 10px;
+    font-size: 17px;
+}
+
+#Subtotal h3{
+    padding: 15px;
+}
+#Subtotal button{
+    background-color: burlywood;
 }

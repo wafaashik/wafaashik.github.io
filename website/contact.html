@@ -7,7 +7,12 @@
     <title>Luxe Attire</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="index.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        #header1 {
+            margin-bottom: -5%;
+        }
+    </style>
 </head>
 <body>
      <section id="header">
@@ -16,9 +21,9 @@
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Shop.html">Shop</a></li>
-                <li><a class="active" href="Blog.html">Blog</a></li>
+                <li><a href="Blog.html">Blog</a></li>
                 <li><a href="About.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a class="active"href="Contact.html">Contact</a></li>
                 <li id="lg-bag"><a href="Shopping.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
@@ -30,57 +35,56 @@
         </div>
      </section>
 
-     <section id="header1">
+    <section id="header1" class="About-header">
        
-        <h2>#ReadAboutUs</h2>
-       <p>Read more about our products!</p>
-       
+        <h2>#ContactUs!</h2>
+        <p>Leave a Meassage, We love to hear from you!</p>
+     
      </section>
+<hr>
+    <section id="contact-details" class="section-m1">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+        <h2> Visit one of our locaions or contact us today</h2>
+        <h3>Head Office</h3>
+        <div>
+            <li>
+                <i class="fal fa-map"></i>
+                <p>418 Oak Street , Los Angeles, CA 90001</p>
+            </li>
+            <li>
+                <i class="far fa-envelope"></i>
+                <p>LuxeAttire@gmail.come</p>
+            </li>
+            <li>
+                <i class="fas fa-phone-alt"></i>
+                <p> +1 (213) 555-7890 / +1 (310) 555-1234</p>
+            </li>
+            <li>
+                <i class="far fa-clock"></i>
+                <p>9:00 - 18:00, Monday - Saturday</p>
+            </li>
+        </div>
+        </div>
 
-    <section id="blog">
-        <div class="BlogBox">
-            <div class="blog-image">
-                <img src="mini.jpeg" alt="">
-            </div>
-            <div class="blog-details">
-                <h4>The Draped Midi Dress</h4>
-                <p>Hers's your perfect Midi Dress for the summer...</p>
-                <a href="#">Read More</a>
-            </div>
-            <h1>01</h1>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.1978060774354!2d-118.27888182578448!3d34.03879671844266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7ea91767557%3A0x20dc6da569cb9da7!2sOak%20St%2C%20Los%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sae!4v1685624384858!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="BlogBox">
-            <div class="blog-image">
-                <img src="glasses.jpeg" alt="">
-            </div>
-            <div class="blog-details">
-                <h4>Black Sunglasses</h4>
-                <p>Buy this Cool Sunglasses to rock...</p>
-                <a href="#">Read More</a>
-            </div>
-            <h1>02</h1>
-        </div>
-        <div class="BlogBox">
-            <div class="blog-image">
-                <img src="blackpants.jpeg" alt="">
-            </div>
-            <div class="blog-details">
-                <h4>High Waisted Black Pants</h4>
-                <p>Hers's your perfect High Waisted Black...</p>
-                <a href="#">Read More</a>
-            </div>
-            <h1>03</h1>
-        </div>
-        
     </section>
 
-     <section id="pagin" class="section-m1">
-        <a href="#">1</a>
-        <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
-        
-     </section>
+    <section id="form-details">
+        <form action="">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We love to hear from you</h2>
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Subject">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button class="normal">Submit</button>
+        </form>
+    </section>
 
-    <section id="News"class="section-m1">
+     <section id="News"class="section-m1">
         <div class="lettertext">
             <h4>Sign Up For Newsletters</h4>
             <p>Get E-mail Updates about our latest items and<span> special offers.</span>  </p>
@@ -128,11 +132,3 @@
 
        </div>
     </footer>
-
-
-   
-
-
-    <script src="index.js"></script>
-</body>
-</html>
