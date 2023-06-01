@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #ffffff;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #ffffff;
+}
+
+h4{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #ffffff;
+    margin: 15px 0 20px 0;
+}
+
+.section{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+/* styling the button*/
+button.normal{
+ font-size: 14px;
+ font-weight: 600;
+ padding: 15px 30px;
+ color: #000000;
+ background-color: #ffffff;
+ border-radius: 4px;
+ cursor: pointer;
+ border: none;
+ outline: none;
+ transition: 0.2s;
+
+}
+
+button.normal1{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s;
+   
+   }
+
+body{
+    width: 100%;
+}
+/* Styling the Header */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #000000;
+    box-shadow: 0 5px 15px rgba(0,0, 0, 0.06);
+    z-index:999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*to remove the bullet points */
+#navbar li{
+   list-style: none;
+   padding: 0 20px;
+   position: relative;
+}
+
+/* to remove the underline and ease in transition */
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+/* to add hover effect  */
+#navbar li a:hover,
+#navbar li a.active{
+   color: burlywood;
+
+}
+/* adding the underline effect in the navbar  */
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: burlywood;
+    position: absolute;
+    bottom: -4px;
+    left:20px
+}
+/* to hide the bar icone in the larger screen and only show it in mobile screen  */
+#mobile{
+    display: none;
+    align-items: center;
+}
+/* to hide the close button in the main screen*/
+#close{
+    display: none;
+}
+/* adding the background and texts  */
+#hero{
+    background-image: url("image.jpg");
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+/* styling the headings*/
+#hero h4{
+   padding-bottom: 15px;
+}
+#hero h1{
+    color: rgb(196, 196, 176);
+ }
+ #hero p{
+    padding-bottom: 15px;
+
+ }
+/* styling the button*/
+#hero button{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: 2px solid #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 12px 28px;
+    cursor: pointer;
+    letter-spacing: 4px;
+
+}
+/* positioning the pictures*/
+.container{
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+/* styling the heading*/
+#products1 h2{
+    color: #000000;
+    font-size: 25px;
+    letter-spacing: 5px;
+    padding-top: 4%;
+    padding-bottom: 0;
+    text-align: center;
+}
+/* styling the image*/
+#products1 img{
+height: 225px;
+width: 225px;
+object-fit: cover;
+}
+
+/* styling the paragraph*/
+#products1 p{
+    color: #000000;
+    letter-spacing: 3.5px;
+    margin-top: 0;
+    margin-bottom: 4%;
+    text-align: center;
+}
+/* styling the product section*/
+#products1 .number1{
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    margin-left: 2%;
+    margin-right: 3%;
+    
+    margin-bottom: 30px;
+}
+
+#products1 .number1 h4{
+    color: #000000;
+    font-size: 15px;
+
+}
+#products1 .number1:hover{
+     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#products1 .number1 img{
+    width: 100%;
+    border-radius: 20px;
+    
+}
+
+#products1 .number1 .des h5{
+    letter-spacing: 2px;
+    padding-top: 10px;
+    
+}
+/* changing the colour of the stars*/
+#products1 .number1 .des .star{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: rgb(206, 141, 57);
+}
+/* making the cart to the left*/
+#products1 .number1  .cart{
+ color: #000000;
+ padding-left: 12pc;
+}
+#banner h4{
+    color: #ffffff;
+    
+
+}
+#banner h2{
+    color: #ffffff;
+    padding-bottom: 15px;
+    }
+/* styling the banner sction with baground and texts*/
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("art2.jpeg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+/* highlighting the offer*/
+#banner h2 span{
+    color: #ef3636;
+}
+#banner button:hover{
+    background-color: black;
+    color: white;
+}
+#banner2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* styling the banners*/
+#banner2 .box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("models.jpg");
+    min-width: 580px;
+    height:50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#banner2 .box2{
+   
+    background-image: url("models3.jpg");
+    
+}
+
+#banner2 h4{
+  font-size: 20px;
+  font-weight: 670;
+}
+
+
+#banner2 .box1:hover button{
+   background-color: burlywood;
+   border: 1px solid burlywood;
+  }
+#banner2 span{
+ color: white;
+ padding-bottom: 20px;
+ font-size: 14px;
+font-weight: 670;
+}
+
+#News h4{
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+  }
+#News p{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 600;
+  }
+/* styling the Newsletter section*/
+#News {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-image: url(newsletter3.jpeg);
+    margin-top: 5%;
+    padding-top:5% ;
+    padding-bottom:4%;
+    padding-left: 3%;
+    padding-right: 5%;
+}
+#News p span{
+   color:#ca0000;
+  }
+#News .form{
+  display: flex;
+  width: 40%;
+} 
+/* styling the input */
+#News input{
+    height: 50px;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius:0 ;
+    border-bottom-right-radius:0 ;
+}
+#News button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    white-space: nowrap;
+    border-top-left-radius:0 ;
+    border-bottom-left-radius:0 ;
+}
+#News button:hover{
+    background-color: rgb(225, 179, 141);
+    color: rgb(0, 0, 0);
+}
+.column h4{
+    color: black;
+   
+  }
+.column p{
+    color: black;
+   
+  }
+
+@media (max-width:799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: white;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: white;
+        font-size: 24px;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #hero {
+        height: 70vh;
+       padding: 0 60px;
+       background-position: top 30% right 30%;
+       
+    }
+    #banner2 .box1 {
+        min-width: 100%;
+        height: 30vh;
+    }
+}
+
+@media(max-width:477px){
+    #header {
+        padding: 10px 30px;
+    }
+    #hero {
+       
+        padding: 0 20px;
+        background-position:55%;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h1 {
+        font-size: 38px;
+      
+    }
+    #products1 .number1 {
+        width: 100%;
+    }
+   
+}
+
+
+
+/* SHOP PAGE */
+#header1{
+    background-image: url(.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    }
+#header1 h2,
+#header1 p{
+    color: #000000;
+}
+#pagin{
+    text-align: center;
+}
+#pagin a{
+    text-decoration: none;
+    background-color: #000000;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+}
+#pagin a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+/* Single product PAGE */
+#details1 .firststpro-image{
+    width: 30%;
+    margin-left: 50px;
+    margin-top: 5%;
+   
+}
+#details1 h4,
+#details1 h2{
+    color: #000000;
+}
+#details1{
+    display: flex;
+    margin-top: 20px;
+}
+#details1 .firststpro-details{
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+ /* styling the H4 heading */
+#details1 .firststpro-details h4{
+   padding: 25px 0 20px 0;
+}
+ /* styling the H2 heading*/
+#details1 .firststpro-details h2{
+   font-size: 20px;
+
+ }
+ /* styling the select menu */
+#details1 .firststpro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+ }
+ /* styling the input */
+#details1 .firststpro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+ }
+/* removing the outline */
+ #details1 .firststpro-details input:focus{
+   outline: none;
+ }
+ /* styling the button */
+ #details1 .firststpro-details button{
+    background-color: burlywood;
+    
+    color: white;
+ }
+ #details1 .firststpro-details button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+ }
+
+ #details1 .firststpro-details span{
+    line-height: 25px;
+ }
+
+
+
+
+ /* BLOG SECTION */
+ #blog h4,
+ #blog p,
+ #blog h1{
+     color: #000000;
+ }
+
+#blog{
+    padding: 150px 150px 0 150px;
+}
+#blog .BlogBox{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#blog .blog-image{
+    width: 40%;
+    margin-right: 40px;
+}
+
+#blog img{
+   width: 100%;
+   height: 250px;
+   object-fit: cover;
+}
+
+#blog .blog-details{
+    width: 40%;
+}
+
+#blog .blog-details a{
+  text-decoration: none;
+  font-size: 15px;
+  color: burlywood;
+  font-weight: 700; 
+  
+}
+#blog .blog-details a:hover{
+    color: #000000;
+}
