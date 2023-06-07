@@ -414,7 +414,7 @@ footer a{
     text-decoration: none;
     margin-bottom: 10px;
 }
-
+/* Refrence : video: https://www.youtube.com/watch?v=P8YuWEkTeuE&t=6688s */
 @media (max-width:799px) {
     #navbar {
         display: flex;
